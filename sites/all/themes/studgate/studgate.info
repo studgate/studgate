@@ -1,0 +1,42 @@
+
+name = American Home Energy Partners
+description = The theme for AHEP
+package = Core
+version = 7.x-1.0
+core = 7.x
+
+stylesheets[all][] = assets/vendor/bootstrap/css/bootstrap.min.css
+stylesheets[all][] = assets/vendor/font-awesome/css/font-awesome.min.css
+stylesheets[all][] = assets/vendor/simple-line-icons/css/simple-line-icons.css
+stylesheets[all][] = assets/vendor/device-mockups/device-mockups.min.css
+stylesheets[all][] = assets/css/ahep.css
+stylesheets[all][] = assets/css/cms.css
+stylesheets[all][] = assets/css/image-map-pro.min.css
+stylesheets[all][] = assets/css/squares.min.css
+
+regions[topbar] = 'Top Bar'
+regions[header] = Header
+
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[blog_featured] = Blog Featured
+
+regions[footertop_first] = Footer Top first
+regions[footertop_middle] = Footer Top middle
+regions[footertop_last] = Footer Top last
+regions[newsletter] = Footer Top Newsletter
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+
+regions[footer] = Footer
+
+settings[shortcut_module_link] = 0
