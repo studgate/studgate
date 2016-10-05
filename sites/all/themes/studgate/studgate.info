@@ -15,6 +15,7 @@ stylesheets[all][] = https://fonts.googleapis.com/css?family=Lato:100,400,700,90
 
 regions[topbar] = 'Top Bar'
 regions[header] = Header
+regions[lets_getstarted] = Let's Get Started
 
 regions[help] = Help
 regions[page_top] = Page top
@@ -26,15 +27,16 @@ regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
-regions[blog_featured] = Blog Featured
+regions[projects] = Projects
 
-regions[footertop_first] = Footer Top first
-regions[footertop_middle] = Footer Top middle
-regions[footertop_last] = Footer Top last
-regions[newsletter] = Footer Top Newsletter
+regions[footertop_location] = Footer Top Location
+regions[footertop_phone] = Footer Top Phone
+regions[footertop_email] = Footer Top Email
+regions[footertop_workinghours] = Footer Top Working Hours
 
 regions[footer_firstcolumn] = Footer first column
 regions[footer_secondcolumn] = Footer second column
+regions[footer_newsletter] = Footer Newsletter
 
 regions[footer] = Footer
 

@@ -391,6 +391,7 @@
                 <div class="col-lg-4">
                    <h2>Newsletter</h2>
                    <p>Enter your email address to sign up for updates, win gifts, blog entries, new projects, etc.</p>
+                   <?php print render($page['footer_newsletter']); ?>
                     <form name="signupMessage" id="signupForm" novalidate>
                          <div class="form-group">
                              <input type="email" class="form-control" placeholder="Enter your email address *" id="email" required data-validation-required-message="Please enter your email address.">
@@ -703,7 +704,7 @@ use or talk about your idea to anyone without your explicit permission.</p>
 
                   <!-- Modal Body -->
                   <div class="modal-body">
-
+                     <?php print render($page['lets_getstarted']); ?>
                      <form name="sentMessage" id="contactForm">
                     <div class="modal-body" style="padding: 5px;">
                        <div class="row">
@@ -810,6 +811,3 @@ use or talk about your idea to anyone without your explicit permission.</p>
          modal.find('.modal-body input#subject').val(recipient)
        })
     </script>
-</body>
-
-</html>
