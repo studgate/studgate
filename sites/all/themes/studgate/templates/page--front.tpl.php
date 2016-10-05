@@ -1,232 +1,815 @@
 
-
-    <section id="top_bar" class="top_bar">
-       <div class="container">
-         <div class="row">
-            <div class="col-sm-6">
-               <ul>
-                  <li> <i class="fa fa-envelope-o"></i> <a href="">info@americanhomeenergypartners.com</a></li>
-                  <li><i class="fa fa-mobile"></i> <a href="tel:6171234567">617.123.4567</a></li>
-               </ul>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Studgate Inc.</a>
             </div>
-            <div class="col-sm-6">
-               <ul class="list-inline list-social">
-                <li class="social-facebook">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google-plus">
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                </li>
-                <li class="social-twitter">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="social-google-plus">
-                 <a href="/search"><i class="fa fa-search"></i></a>
-                </li>
-            </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li><a class="page-scroll" href="#mainNav">Home</a></li>
+                    <li><a class="page-scroll" href="#whoweare">About Us</a></li>
+                    <li><a class="page-scroll" href="#guaranteed">Services</a></li>
+                    <li><a class="page-scroll" href="#portfolio">Work</a></li>
+                    <li><a class="page-scroll" href="#clients">Partners</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll btn btn-xl" title="Coming Soon!!" href="http://www.studgate.com/v1/?q=blog">Blog</a></li>
+                </ul>
             </div>
-         </div>
-      </div>
-    </section>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-    <section id="company_logo" class="company_logo">
-      <div class="container">
-         <div class="row">
-            <h1 class="logo"><a href="<?php print $front_page; ?>"><?php print $site_name; ?></a></h1>
-         </div>
-      </div>
-    </section>
-
-
-    <div class="container">
-       <nav class="navbar nav navbar-default">
-       <div class="navbar-header">
-          <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-       <?php endif; ?>
-       </div>
-
-
-       <div class="collapse navbar-collapse js-navbar-collapse">
-          <?php print render($page['header']); ?>
-       </div>
-       <!-- /.nav-collapse -->
-     </nav>
-  </div>
-
+    <!-- Header -->
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                           <h1>Your 21st Century Home</h1>
-                           <p>
-                              Revolutionizing the way you use energy<br />
-
-                              Greener. Cleaner. Smarter.</p>
-                           <a href="/our-company" class="btn btn-outline btn-xl page-scroll">Start Now</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="intro-text">
+               <div class="row">
+                  <div class="col-md-7">
+                     <h2>If you have a vision, We have a plan!</h2>
+                     <p>We build beautiful websites expertly &amp; we help transform ideas without compromising on security &amp; best practices. Our projects are of high quality tailored to the needs of our clients.</p>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="intro-lead-in">Let's <b>Discuss</b> Your Project</div>
+                     <a href="" data-toggle="modal" data-target="#getStarted" data-whatever="Let's Get Started" class="page-scroll btn btn-xl">Let's get Started</a>
+                  </div>
+               </div>
             </div>
         </div>
     </header>
 
-    <?php if ($messages): ?>
-      <div id="messages"><div class="section clearfix">
-        <?php print $messages; ?>
-      </div></div> <!-- /.section, /#messages -->
-    <?php endif; ?>
+    <!-- who were are section -->
+    <section id="whoweare">
+      <div class="container">
+         <div class="row">
+             <div class="col-lg-12 text-center">
+                 <h2 class="section-heading">Who We Are</h2>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-lg-8 col-lg-offset-2 text-center">
+                <p class="large text-muted">We are passionate about developing websites & transforming ideas into projects that our clients can be proud of.
+                   Our clients are guaranteed a streamlined process &amp; their needs &amp; success are our top priority. We specialize in creating high impact websites &amp; web applications
+                   in a variety of domains, including but not limited to the web, social media, mobile (iPhone &amp; Android), etc..</p>
+             </div>
+         </div>
+      </div>
+   </section>
 
-    <section id="download" class="download text-center">
+    <!-- process section -->
+    <section id="process">
+      <div class="container">
+         <div class="row">
+             <div class="col-lg-12 text-center">
+                 <h2 class="section-heading">Our Process</h2>
+                 <h3 class="section-subheading text-muted">Our process or the <span class="blueish"><b>4Ds</b></span> is simple, we discuss, we design, we develop, & we deliver</h3>
+             </div>
+         </div>
+         <div class="row benefits">
+      	    <div class="col-md-3">
+      	      <h4> <i class="fa fa-binoculars" aria-hidden="true"></i> Discovery &amp; Discussion</h4>
+      	      <p class="text-muted">We meet on different occasions to understand your needs &amp; goals. We use these <b>discussions</b> to setup a plan, target users, user stories, etc.</p>
+      	    </div>
+
+      	    <div class="col-md-3">
+      	      <h4><i class="fa fa-desktop" aria-hidden="true"></i> Design &amp; Layout</h4>
+      	      <p class="text-muted">A beautiful, clean, responsive (desktop, tablet & mobile) &amp; professional <b>design</b> is built based on our discussions which is pivotal to the look & feel of any project.</p>
+      	    </div>
+
+      	    <div class="col-md-3">
+      	      <h4><i class="fa fa-wrench" aria-hidden="true"></i> Development</h4>
+      	      <p class="text-muted">We develop &amp; build the project based on milestones using the latest technology &amp; appropriate programming language so that it's optimized &amp; issues free. </p>
+      	    </div>
+
+      		 <div class="col-md-3">
+      	      <h4><i class="fa fa-calendar" aria-hidden="true"></i> Delivery </h4>
+      	      <p class="text-muted">After testing, feedback & revisions, we prepare for delivery. With the project completed; we optimize the server to push the project live or submit app to the Store.   </p>
+      	    </div>
+	        </div>
+
+      </div>
+    </section>
+
+    <!-- satisfaction guaranteed section  -->
+    <section id="guaranteed">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <div class="row">
+                  <div class="col-lg-3 cold-md-3">
+                     <div class="satisfaction">
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/satisfaction.png">
+                     </div>
+                  </div>
+                  <div class="col-lg-9 col-md-9">
+                     <p class="details"> <span>100% Satisfation Guaranteed</span> <br />
+                     We are proud of our ability to make and keep our clients happy...</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4">
+               <a href="" data-toggle="modal" data-target="#ourGuaranteed"><div class="options"> <button type="button" class="btn btn-default kolor">
+                 <i class="fa fa-comment" aria-hidden="true"></i> More Info
+              </button></a>
+               <a href="tel:6173956842"><button type="button" class="btn btn-default">
+                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 617.395.6842
+              </button></a>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Your Comfort and Savings Start Here</h2>
-                    <p>Click or Hover our icons to view more info about our products &amp; on how we can help you save</p>
-                    <div id="image-map-pro-container"></div>
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Main Services</h2>
+                    <h3 class="section-subheading text-muted">We provide these services &amp; more... </h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="<?php print base_path() . path_to_theme() ?>/assets/images/web_design.png">
+                    <h4 class="service-heading">Web Design</h4>
+                    <p class="text-muted">We build small &amp; big websites or projects using different web languages based on the need of each project.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="<?php print base_path() . path_to_theme() ?>/assets/images/drupal.png">
+                    <h4 class="service-heading">Drupal</h4>
+                    <p class="text-muted">We are a full Drupal team, experts in Drupal 6, 7 & 8, frontend, backend, custom modules, &amp; eveything in between</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="<?php print base_path() . path_to_theme() ?>/assets/images/wordpress.png">
+                    <h4 class="service-heading">Wordpress</h4>
+                    <p class="text-muted">Wordpress is also an expertise of ours. We build site from scratch & build custom plugings, themes, backend & frontend...</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="<?php print base_path() . path_to_theme() ?>/assets/images/mobile_apps.png">
+                    <h4 class="service-heading">Mobile Apps</h4>
+                    <p class="text-muted">We are the perfect parner for your app, we do the research, develop the concept, build, &amp; submit your iOS or Android app</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features">
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Products &amp; Technologies</h2>
-                        <p class="text-muted">Conserve Energy, Save Money, &amp; Protect the Environment</p>
-                        <hr>
-                    </div>
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Examples of a few websites built within the last year...</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                               <div class="media">
-                                  <div class="media-left">
-                                     <i class="fa fa-heart-o"></i>
-                                  </div>
-                                  <div class="media-body">
-                                    <h3 class="media-heading">Affordable</h3>
-                                    <p>We spend most of our lives in our homes. Still, too many homeowners continue to experience uncomfortable hot and cold spots and increased energy costs.</p>
-                                 </div>
-                               </div>
-                            </div>
-                            <div class="col-md-4">
-                               <div class="media">
-                                 <div class="media-left">
-                                    <i class="fa fa-lightbulb-o"></i>
-                                 </div>
-                                 <div class="media-body">
-                                   <h3 class="media-heading">Quality, Energy Saving Products</h3>
-                                   <p>Our energy-saving products are USA made, eco-friendly, and designed to help homeowners conserve energy, save money, and live more comfortably.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                               <div class="media">
-                                 <div class="media-left">
-                                    <i class="fa fa-star-o"></i>
-                                 </div>
-                                 <div class="media-body">
-                                   <h3 class="media-heading">Smarter & More Efficient Living</h3>
-                                   <p>Today’s homeowners demand energy efficient products for their safety and the environment. Our products are designed to help you live smarter and more efficiently.</p>
-                                </div>
-                              </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfoliofriendlishwebsite" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <div class="row text-center">
-                           <a href="/products_technologies" class="btn btn-primary">View All <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/friendlish_website.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Friendlish Website <span class="label label-success">Own</span></h4>
+                        <p class="text-muted">Responsive website for App</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioimi" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
                         </div>
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/imi.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>IMI Inc.</h4>
+                        <p class="text-muted">Updated Website for IMI Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfoliobelpower" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/belpower.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>BelPower Solutions</h4>
+                        <p class="text-muted">Drupal Site & custom modules</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioabb" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/abb.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>ABB</h4>
+                        <p class="text-muted">Power Inverters built in Sitefinity</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfoliofriendlishapp" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/friendlish_app-small.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Friendlish App <span class="label label-success">Own</span></h4>
+                        <p class="text-muted">Friendlish iOS App</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfoliostudgate" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/studgate.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Studgate Inc.</h4>
+                        <p class="text-muted">Our Old website built in Drupal</p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <section id="blog" class="blog">
-      <div class="container">
-         <div class="row">
-            <?php print render($page['blog_featured']); ?>
-         </div>
-      </div>
-   </section>
+    <!-- Clients Aside -->
+    <section id="clients" class="clients">
+         <aside id="clients" class="clients">
+           <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2 class="section-heading">Partners</h2>
+                  </div>
+              </div>
+               <div class="row">
+                   <div class="col-md-3 col-sm-3">
+                       <a href="https://www.drupal.org/">
+                           <img src="<?php print base_path() . path_to_theme() ?>/assets/images/logos/partner_drupal.png" class="img-responsive img-centered" alt="">
+                       </a>
+                   </div>
+                   <div class="col-md-3 col-sm-3">
+                       <a href="https://www.acquia.com/partners/showcase/studgate-inc">
+                           <img src="<?php print base_path() . path_to_theme() ?>/assets/images/logos/partner_acquia.png" class="img-responsive img-centered" alt="">
+                       </a>
+                   </div>
+                   <div class="col-md-3 col-sm-3">
+                       <a href="https://assoc.drupal.org/">
+                           <img src="<?php print base_path() . path_to_theme() ?>/assets/images/logos/partner_drupal_assoc.png" class="img-responsive img-centered" alt="">
+                       </a>
+                   </div>
+                   <div class="col-md-3 col-sm-3">
+                       <a href="https://wordpress.org/support/profile/studgate">
+                           <img src="<?php print base_path() . path_to_theme() ?>/assets/images/logos/partner_wordpress.png" class="img-responsive img-centered" alt="">
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </aside>
+    </section>
 
-    <section id="contact" class="contact bg-primary">
+    <!-- Contact Section -->
+    <section id="contact">
         <div class="container">
-            <div class="row">
-               <div class="col-md-3">
-                  <a href="<?php print $front_page; ?>"><img src="<?php print base_path() . path_to_theme() ?>/assets/img/footer_company_logo.png"></a>
-                  <?php print render($page['footertop_first']); ?>
-               </div>
-               <div class="col-md-3">
-                  <h3>Our Company</h3>
-                  <?php print render($page['footertop_middle']); ?>
-               </div>
-               <div class="col-md-3">
-                  <h3>Products &amp; Technologies</h3>
-                  <?php print render($page['footertop_last']); ?>
-               </div>
-               <div class="col-md-3">
-                  <h3>Newsletter Signup</h3>
-                  <p>Need more info? Then signup to receive industry insights and product launches, delivered direct to your inbox.</p>
-                  <?php print render($page['newsletter']); ?>
 
-                  <!-- <form>
-                     <div class="input-group">
-                       <input type="text" class="form-control" placeholder="Enter your email address">
-                       <span class="input-group-btn">
-                         <button class="btn btn-default" type="button">Subscribe</button>
-                       </span>
-                     </div>
-                  </form> -->
+            <!-- contact info section -->
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Location</h4>
+                    <h6>We're based in Boston but we are in NY, LA &amp; Hong Kong</h6>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Phone</h4>
+                    <h6>Have a question? Call us now </h6>
+                    <h5> <a href="tel:6173956842">617.395.6842</a></h5>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Mail</h4>
+                    <h6>Drop Us and Email! </h6>
+                    <h5><a href="info@studgate.com">info@studgate.com</a></h5>
+                </div>
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Working Hours</h4>
+                    <h6>We are open </h6>
+                    <h5> Mon - Fri: 8am - 6pm</h5>
+                </div>
+            </div>
+
+            <div class="row border">
+               <div class="col-lg-4">
+                  <h2> Studgate Inc.</h2>
+                  <p>We are a digital & marketing firm that specializes in the creation of full featured sites &amp; mobile apps.</p>
+
+                  <p>We are dedicated, experienced, &amp; use the newest technologies available to provide our clients the best.</p>
+
+                  <p class="social-buttons">
+                     <a href="https://www.facebook.com/studgate" rel="external" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="https://twitter.com/studgate_inc" rel="external" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     <a href="https://github.com/studgateinc" rel="external" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                     <a href="https://dribbble.com/studgate" rel="external" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                     <a href="https://plus.google.com/+StudgateIncQuincy" rel="external" title="Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                  </p>
                </div>
+
+               <div class="col-lg-4">
+                  <h2>Projects</h2>
+                  <div class="row" id="portfolio">
+                     <div class="col-md-6 col-sm-6 portfolio-item">
+                         <a href="#portfoliofriendlishapp" class="portfolio-link" data-toggle="modal">
+                             <div class="portfolio-hover">
+                                 <div class="portfolio-hover-content">
+                                     <span>View</span>
+                                 </div>
+                             </div>
+                             <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/friendlish_app.png" class="img-responsive" alt="">
+                         </a>
+                         <div class="portfolio-caption">
+                             <h4>Friendlish</h4>
+                         </div>
+                     </div>
+                     <div class="col-md-6 col-sm-6 portfolio-item">
+                         <a href="#portfoliofindtalents" class="portfolio-link" data-toggle="modal">
+                             <div class="portfolio-hover">
+                                 <div class="portfolio-hover-content">
+                                     <span>View</span>
+                                 </div>
+                             </div>
+                             <img src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/findtalents_app.png" class="img-responsive" alt="">
+                         </a>
+                         <div class="portfolio-caption">
+                             <h4>FindTalents</h4>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+                <div class="col-lg-4">
+                   <h2>Newsletter</h2>
+                   <p>Enter your email address to sign up for updates, win gifts, blog entries, new projects, etc.</p>
+                    <form name="signupMessage" id="signupForm" novalidate>
+                         <div class="form-group">
+                             <input type="email" class="form-control" placeholder="Enter your email address *" id="email" required data-validation-required-message="Please enter your email address.">
+                             <p class="help-block text-danger"></p>
+                         </div>
+
+                         <div class="clearfix"></div>
+                         <div id="success"></div>
+                         <button type="submit" class="btn btn-xl">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-           <div class="row">
-             <div class="col-md-6">
-               <p>&copy; <?php print date('Y'); ?> American Energy. All Rights Reserved.</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <span class="copyright">&copy; <?php print gmdate( "Y" ); ?> Studgate Inc. All Rights reserved.</span>
+                </div>
+
+                <div class="col-md-4">
+                    <!-- <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul> -->
+                </div>
             </div>
-            <div class="col-md-6">
-               <?php print render($page['footer_secondcolumn']); ?>
-            </div>
-         </div>
         </div>
     </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfoliofriendlishwebsite" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Friendlish Website </h2>
+                                <p class="item-intro text-muted">The website for the Friendlish App</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/friendlish-big.png" alt="">
+                                <p>The landing page website for the Friendlish App can be viewed at <a href="http://frienldish.com" rel="external">friendlish.com</a>. You can download the app <a href="https://itunes.apple.com/us/app/friendlish/id991231615?ls=1&mt=8">Download Friendlish</a>. The website is a simple responsive web design with some php and no backend. </p>
+
+                                <ul class="list-inline">
+                                    <li>Date: September 2015</li>
+                                    <li>Client: Our Own</li>
+                                    <li>Category: Web Design, PHP, Responsive Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioimi" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>IMI Inc.</h2>
+                                <p class="item-intro text-muted">IMI Inc. new Drupal website</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/imi-preview.png" alt="">
+                                <p><a href="http://imipcb.com" rel="external">IMI Inc.</a> is the website for IMI upgraded using Drupal. The new website is backed by Drupal 8 & custom build from the ground up because Drupal 8 is not as stable as we want it to but we did.
+                                   In addition with Drupal 8, we used, PSD+HTML+Bootstrap+responsive design which help keep the website consistent in desktop, tablet & mobile devices. </p>
+                                <p>You can visit IMI <a href="http://imipcb.com" rel="external">here</a>.</p>
+
+                                <ul class="list-inline">
+                                    <li>Date: August 2016</li>
+                                    <li>Client: IMI Inc.</li>
+                                    <li>Category: Drupal 8, PHP, Bootstrap, PHP 5, Responsive Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfoliobelpower" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>BelPower Solutions</h2>
+                                <p class="item-intro text-muted">Custom site built on top Drupal</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/belpower-preview.png" alt="">
+                                <p>BelPower Solutions was built for Power-One before they got acquired by <a href="http://belpowersolutions.com/" rel="external">BelPower</a>. The website was built extensively in Drupal with a lot of custom work.</p>
+                                <p>This is a very advanced site which took 6 months to build & continued support after, visit <a href="http://belpowersolutions.com" rel="external">BelPower Solutions</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioabb" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>ABB</h2>
+                                <p class="item-intro text-muted">Built in Drupal & converted to Sitefinity</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/abb-preview.png" alt="">
+                                <p>ABB's power converters and inverters was built using Drupal and converted all features into <a href="http://www.sitefinity.com/" rel="external">sitefinity CMS</a>. You can visit the website here <a href="http://new.abb.com/power-converters-inverters/solar" rel="external">Power Converters/Inverters</a>.  </p>
+                                <p>Our flexibility and skills allowed us to convert all the importand features from Drupal to an entire different content management system without losing any important feature.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfoliofriendlishapp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Friendlish App</h2>
+                                <p class="item-intro text-muted">iPhone App built with Objective-C</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/friendlish_app-preview.png" alt="">
+                                <p><a href="http://www.friendlish.com" rel="external">Friendlish</a> is about connecting with the people who matter to you the most. We will help you stay connected with friends from Facebook & Contacts. The app will allow you to import friends and help facilitate the ability to set custom events and different types of reminders (call, facebook message, email or text).</p>
+                                <p>You can download the App here <a href="https://itunes.apple.com/us/app/friendlish/id991231615?ls=1&mt=8" rel="external">Friendlish App</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfoliostudgate" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Studgate Site</h2>
+                                <p class="item-intro text-muted">Our old website built in Drupal</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/studgate-preview.png" alt="">
+                                <p>This is our old Drupal site built from the ground up using Drupal. We built the custom modules, social integration, multiple content types, client integration, forms, etc.</p>
+                                <p>You can still access the old website at <a href="http://www.studgate.com/v1" rel="external">studgate.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 7 -->
+    <div class="portfolio-modal modal fade" id="portfoliofindtalents" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Findtalents</h2>
+                                <p class="item-intro text-muted">Our new app coming soon</p>
+                                <img class="img-responsive img-centered" src="<?php print base_path() . path_to_theme() ?>/assets/images/portfolio/findtalents_app-preview.png" alt="">
+                                <p>Findtalents is our next app, we're working very hard to release the app to the public and we're doing a lot of beta testing to improve functionality and fix bugs.</p>
+                                <p>If you would like to participate in beta testing, visit <a href="http://www.findtalents.com" rel="external">findtalents.com</a> to sign up</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- guarantee info modal -->
+    <div class="modal fade" id="ourGuaranteed" tabindex="-1" role="dialog"
+         aria-labelledby="ourGuaranteed" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close"
+                       data-dismiss="modal">
+                           <span aria-hidden="true">&times;</span>
+                           <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="ourGuaranteed">
+                       Satisfaction Guaranteed!!
+                    </h4>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                   <div class="row">
+                      <div class="col-xs-6">
+                        <p>We do our best to complete your project in a timely manner & within budget. We won't give up or consider the project finished until you're completely
+                           satisfied with the end result.</p>
+                           <p class="alert alert-success small">Any idea you share with us is protected under client non-disclosure agreement (NDA). We will not share,
+use or talk about your idea to anyone without your explicit permission.</p>
+                     </div>
+                      <div class="col-xs-6">
+                         <p class="lead">All our <span class="text-success">Projects</span> include:</p>
+                         <ul class="list-unstyled" style="line-height: 2">
+                             <li><span class="fa fa-check text-success"></span> Documentation Manual in PDF</li>
+                             <li><span class="fa fa-check text-success"></span> 3 Month Support </li>
+                             <li><span class="fa fa-check text-success"></span> Responsive Design</li>
+                             <li><span class="fa fa-check text-success"></span> Always stay within time frame</li>
+                             <li><span class="fa fa-check text-success"></span> Project Management portal <small>(keep track)</small></li>
+                         </ul>
+                         <p><a href="" data-toggle="modal" data-target="#getStarted" data-whatever="Let's Get Started" class="btn btn-info btn-block">Let's Get Started</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+    </div>
+
+    <!-- Form Modal -->
+      <div class="modal fade" id="getStarted" tabindex="-1" role="dialog"
+           aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                      <button type="button" class="close"
+                         data-dismiss="modal">
+                             <span aria-hidden="true">&times;</span>
+                             <span class="sr-only">Close</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">
+                          Let's Get Started
+                      </h4>
+                  </div>
+
+                  <!-- Modal Body -->
+                  <div class="modal-body">
+
+                     <form name="sentMessage" id="contactForm">
+                    <div class="modal-body" style="padding: 5px;">
+                       <div class="row">
+                           <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                              <p>Call Us at <a href="tel:6173956842">617.395.6842</a> or email us at <a href="mailto:info@studgate.com" rel="external">info@studgate.com</a> or <a href="mailto:ralph@studgate.com" rel="external">ralph@studgate.com</a> for faster response...</p>
+                           </div>
+                        </div>
+                          <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <label>First Name:</label>
+                                    <input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                  <label>Last Name:</label>
+                                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                                </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                  <label>Email:</label>
+                                    <input class="form-control" name="email" placeholder=" ex: you@emailaddress.com" type="email" required />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <label>Phone:</label>
+                                    <input id="phone#" name="phone#" placeholder=" ex: (xxx) xxx-xxxx" class="form-control input-md" required="" type="text">
+                                </div>
+                           </div>
+
+
+                           <div class="row">
+                                 <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                     <label>City:</label>
+                                  <input id="city" name="city" placeholder="city of residence / company" class="form-control input-md" required="" type="text">
+                                </div>
+
+                                 <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                     <label>Service:</label>
+                                  <select id="service" name="service" class="form-control">
+                                    <option value="Web Design">Web Design</option>
+                                    <option value="Drupal">Drupal</option>
+                                    <option value="Wordpress">Wordpress</option>
+                                    <option value="Mobile App">Mobile App</option>
+                                    <option value="*Other">*Other</option>
+                                  </select>
+                                </div>
+                           </div>
+
+                           <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required />
+                                </div>
+                           </div>
+                           <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <textarea style="resize:vertical;" class="form-control" placeholder="Message..." rows="6" name="message" required></textarea>
+                                </div>
+                           </div>
+                     </div>
+                     <div class="panel-footer" style="margin-bottom:-14px;">
+                        <input type="submit" class="btn btn-success" value="Send"/>
+                             <!--<span class="glyphicon glyphicon-ok"></span>-->
+                        <input type="reset" class="btn btn-danger" value="Clear" />
+                             <!--<span class="glyphicon glyphicon-remove"></span>-->
+                        <button style="float: right;" type="button" class="btn btn-primary btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                  </form>
+
+                  </div>
+
+                  <!-- Modal Footer -->
+                  <div class="modal-footer">
+                      All Fields required!!
+                  </div>
+              </div>
+          </div>
+      </div>
 
     <!-- jQuery -->
     <script src="<?php print base_path() . path_to_theme() ?>/assets/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php print base_path() . path_to_theme() ?>/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/image-map-pro.min.js"></script>
+
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script>
-    ;(function ($, window, document, undefined) {
-        $(document).ready(function() {
-            // Launch the plugin
-            $('#image-map-pro-container').imageMapPro({"id":7537,"editor":{"selected_shape":"spot-1517"},"general":{"name":"ahep","width":800,"height":800,"image_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house.png"},"spots":[{"id":"spot-1517","x":13.4,"y":57.4,"width":40,"height":40,"actions":{"click":"show-tooltip"},"default_style":{"use_icon":1,"icon_type":"custom","icon_svg_path":"M100.942,0.001C44.9,0.304-0.297,45.98,0.006,102.031      c0.293,56.051,45.998,101.238,102.02,100.945c56.081-0.303,101.248-45.978,100.945-102.02      C202.659,44.886,157.013-0.292,100.942,0.001z M101.948,186.436c-46.916,0.234-85.108-37.576-85.372-84.492      c-0.244-46.907,37.537-85.157,84.453-85.411c46.926-0.254,85.167,37.596,85.421,84.483      C186.695,147.951,148.855,186.182,101.948,186.436z M116.984,145.899l-0.42-75.865l-39.149,0.254l0.078,16.6l10.63-0.059      l0.313,59.237l-11.275,0.039l0.088,15.857l49.134-0.264l-0.098-15.847L116.984,145.899z M102.065,58.837      c9.575-0.039,15.349-6.448,15.3-14.323c-0.254-8.07-5.882-14.225-15.095-14.186c-9.184,0.059-15.173,6.292-15.134,14.362      C87.185,52.555,93.028,58.906,102.065,58.837z","icon_svg_viewbox":"0 0 202.978 202.978","icon_fill":"#5c63af","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"mouseover_style":{"icon_fill":"#dd371b"},"tooltip_style":{"background_opacity":1},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-69881\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Garage Door Insulation Kit\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"Reflects up to 97% of radiant heat. Adds up to R-6. Durable, maintenance free, and reduces noise and drafts from outside your garage.\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-924141\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Garage Door Insulation Kit</h3></div><div id=\"sq-element-687931\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Reflects up to 97% of radiant heat. Adds up to R-6. Durable, maintenance free, and reduces noise and drafts from outside your garage.</p></div><div id=\"sq-element-107261\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"#\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-8941","x":35.7,"y":67.5,"width":40,"height":40,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-788831\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Thermal Coat\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"hermalCoat is a highly reflective ceramic coating that is designed to eliminate heat loss in ceilings and interior walls. ThermalCoat is a paintable substance that reflects up to 90% of heat, improving your home’s efficiency both winter and summer\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/thermal-coat\",\"height\":30,\"border_radius\":5,\"padding\":10},\"font\":{\"font_size\":\"More\"}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-118321\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Thermal Coat</h3></div><div id=\"sq-element-34211\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">hermalCoat is a highly reflective ceramic coating that is designed to eliminate heat loss in ceilings and interior walls. ThermalCoat is a paintable substance that reflects up to 90% of heat, improving your home’s efficiency both winter and summer</p></div><div id=\"sq-element-994771\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/thermal-coat\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-388","x":82,"y":87.5,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-967101\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Hot Water Heater Wraps\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"American Energy’s Hot Water Heater Wraps are designed to help lower the cost of heating the water in your home. In many homes, up to 10% of utility costs are spent just on heating water.\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/hot-water-heater-wraps\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-962921\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Hot Water Heater Wraps</h3></div><div id=\"sq-element-153231\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">American Energy’s Hot Water Heater Wraps are designed to help lower the cost of heating the water in your home. In many homes, up to 10% of utility costs are spent just on heating water.</p></div><div id=\"sq-element-717861\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/hot-water-heater-wraps\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-7894","x":59,"y":46.9,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-517961\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"ePod\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"ePOD is designed with state of the art technology to actively monitor and reduce electricity consumption in your home as well as reduce harmful electromagnetic fields.\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/epod\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-342481\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">ePod</h3></div><div id=\"sq-element-617241\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">ePOD is designed with state of the art technology to actively monitor and reduce electricity consumption in your home as well as reduce harmful electromagnetic fields.</p></div><div id=\"sq-element-502191\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/epod\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-8000","x":0,"y":0,"width":0,"height":0,"default_style":{"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-998541\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Bluemaxx\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"bluemaxx is a synthetically engineered product that is added to the refrigerant of an existing air-conditioner or refrigeration system. It is designed to enhance your existing system, helping you save on energy costs.\"}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-863981\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Bluemaxx</h3></div><div id=\"sq-element-584551\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">bluemaxx is a synthetically engineered product that is added to the refrigerant of an existing air-conditioner or refrigeration system. It is designed to enhance your existing system, helping you save on energy costs.</p></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-9877","x":58.2,"y":26.9,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-282081\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Multi-layer insulation\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"Multi-layer insulation products can help homeowners reduce the cost of heati\\nng and cooling for their homes, creating a more comfortable living environment.\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/multi-layer-insulation\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-725871\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Multi-layer insulation</h3></div><div id=\"sq-element-173271\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Multi-layer insulation products can help homeowners reduce the cost of heati<br>ng and cooling for their homes, creating a more comfortable living environment.</p></div><div id=\"sq-element-181361\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/multi-layer-insulation\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-8660","x":32.8,"y":20,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-38081\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Solar Hybrid Home\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"Our Solar Hybrid Home gives you the best of both worlds by utilizing solar power with battery back up day and night while maintaining the support of your existing power grid.\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/solar-hybrid\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-454501\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Solar Hybrid Home</h3></div><div id=\"sq-element-168421\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Our Solar Hybrid Home gives you the best of both worlds by utilizing solar power with battery back up day and night while maintaining the support of your existing power grid.</p></div><div id=\"sq-element-240081\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/solar-hybrid\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-9544","x":80,"y":12.2,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-188711\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"SolarFans\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"The solar fans are advanced, high-efficiency solar attic ventilation systems. yellowblue’s SolarFan guarantees better air performance because of the Maximum Power Point Technology Feature (MPPT).\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/solar-attic-fan\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-442921\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">SolarFans</h3></div><div id=\"sq-element-116191\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">The solar fans are advanced, high-efficiency solar attic ventilation systems. yellowblue’s SolarFan guarantees better air performance because of the Maximum Power Point Technology Feature (MPPT).</p></div><div id=\"sq-element-879301\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/solar-attic-fan\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}},{"id":"spot-1671","x":55.6,"y":88.1,"default_style":{"use_icon":1,"icon_type":"custom","icon_url":"http://dev-american-home-energy-partners.pantheonsite.io/sites/all/themes/ahep/assets/img/house_icon52.png"},"tooltip_content":{"content_type":"content-builder","squares_json":"{\"containers\":[{\"id\":\"sq-container-809361\",\"settings\":{\"elements\":[{\"settings\":{\"name\":\"Heading\",\"iconClass\":\"fa fa-header\"},\"options\":{\"heading\":{\"text\":\"Energy Optimizer\"}}},{\"settings\":{\"name\":\"Paragraph\",\"iconClass\":\"fa fa-paragraph\"},\"options\":{\"text\":{\"text\":\"Our G1-FM indoor is our flush mount unit which comes with a face plate to create a cleaner look on those finished rooms. The unit sits flush with the wall and is hardwired into your electrical panel improving the way all motors function in your home.\"}}},{\"settings\":{\"name\":\"Button\",\"iconClass\":\"fa fa-link\"},\"options\":{\"button\":{\"text\":\"More\",\"link_to\":\"/products_technologies/energy-optimizer\",\"height\":30,\"border_radius\":5,\"padding\":10}}}]}}]}","squares_content":"<div class=\"squares-container\"><div id=\"sq-element-108231\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><h3 id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Energy Optimizer</h3></div><div id=\"sq-element-133531\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><p id=\"\" style=\"font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none;  margin: 0; padding: 0;\" class=\"\">Our G1-FM indoor is our flush mount unit which comes with a face plate to create a cleaner look on those finished rooms. The unit sits flush with the wall and is hardwired into your electrical panel improving the way all motors function in your home.</p></div><div id=\"sq-element-936741\" class=\"squares-element sq-col-lg-12 \" style=\"margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; float: left; font-family: sans-serif; font-size: 14px; font-weight: normal; font-style: normal; line-height: 22px; color: #ffffff; text-align: left; text-decoration: none; text-transform: none; background-color: rgba(255, 255, 255, 0); opacity: 1; box-shadow: none; border-width: 0px; border-style: none; border-color: rgba(0, 0, 0, 1); border-radius: 0px; \"><div id=\"\" style=\"\" class=\"\"><a href=\"/products_technologies/energy-optimizer\" style=\"display: inline-block; height: 30px; line-height: 30px; background-color: #2196f3; color: #ffffff; border-radius: 5px; padding-left: 10px; padding-right: 10px; \"  class=\"squares-button\">More</a></div></div><div class=\"squares-clear\"></div></div>"}}]});
-        });
-    })(jQuery, window, document);
-    </script>
+    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/jqBootstrapValidation.js"></script>
+    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/contact_me.js"></script>
+
     <!-- Theme JavaScript -->
-    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/ahep.js"></script>
-    <script type="text/javascript">
-      jQuery(document).on('click', '.mega-dropdown', function(e) {
-         e.stopPropagation()
-      })
+    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/studgate.js"></script>
+    <script src="<?php print base_path() . path_to_theme() ?>/assets/js/site.js"></script>
+
+    <script>
+       $('#getStarted').on('show.bs.modal', function (event) {
+         var button = $(event.relatedTarget) // Button that triggered the modal
+         var recipient = button.data('whatever') // Extract info from data-* attributes
+         // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+         // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+         var modal = $(this)
+         modal.find('.modal-title').text(recipient)
+         modal.find('.modal-body input#subject').val(recipient)
+       })
     </script>
+</body>
+
+</html>

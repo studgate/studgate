@@ -3,7 +3,7 @@
 /**
  * Add body classes if certain regions have content.
  */
-function ahep_preprocess_html(&$variables) {
+function studgate_preprocess_html(&$variables) {
   if (!empty($variables['page']['featured'])) {
     $variables['classes_array'][] = 'featured';
   }
@@ -29,7 +29,7 @@ function ahep_preprocess_html(&$variables) {
 /**
  * Override or insert variables into the page template for HTML output.
  */
-function ahep_process_html(&$variables) {
+function studgate_process_html(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_html_alter($variables);
@@ -45,7 +45,7 @@ function ahep_process_html(&$variables) {
 /**
  * Override or insert variables into the page template.
  */
-function ahep_process_page(&$variables) {
+function studgate_process_page(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -82,7 +82,7 @@ function ahep_process_page(&$variables) {
 /**
  * Implements hook_preprocess_maintenance_page().
  */
-function ahep_preprocess_maintenance_page(&$variables) {
+function studgate_preprocess_maintenance_page(&$variables) {
   // By default, site_name is set to Drupal if no db connection is available
   // or during site installation. Setting site_name to an empty string makes
   // the site and update pages look cleaner.
@@ -96,7 +96,7 @@ function ahep_preprocess_maintenance_page(&$variables) {
 /**
  * Override or insert variables into the maintenance page template.
  */
-function ahep_process_maintenance_page(&$variables) {
+function studgate_process_maintenance_page(&$variables) {
   // Always print the site name and slogan, but if they are toggled off, we'll
   // just hide them visually.
   $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
@@ -114,7 +114,7 @@ function ahep_process_maintenance_page(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function ahep_preprocess_node(&$variables) {
+function studgate_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
@@ -123,7 +123,7 @@ function ahep_preprocess_node(&$variables) {
 /**
  * Override or insert variables into the block template.
  */
-function ahep_preprocess_block(&$variables) {
+function studgate_preprocess_block(&$variables) {
 
    if (!empty($variables['title_suffix']['add_or_remove_shortcut']) && $variables['title']) {
      // Add a wrapper div using the title_prefix and title_suffix render elements.
@@ -148,14 +148,14 @@ function ahep_preprocess_block(&$variables) {
 /**
  * Implements theme_menu_tree().
  */
-function ahep_menu_tree($variables) {
+function studgate_menu_tree($variables) {
   return '<ul class="menu clearfix">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_field__field_type().
  */
-function ahep_field__taxonomy_term_reference($variables) {
+function studgate_field__taxonomy_term_reference($variables) {
   $output = '';
 
   // Render the label, if it's not hidden.
