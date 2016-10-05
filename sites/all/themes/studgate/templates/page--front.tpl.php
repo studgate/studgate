@@ -392,16 +392,6 @@
                    <h2>Newsletter</h2>
                    <p>Enter your email address to sign up for updates, win gifts, blog entries, new projects, etc.</p>
                    <?php print render($page['footer_newsletter']); ?>
-                    <form name="signupMessage" id="signupForm" novalidate>
-                         <div class="form-group">
-                             <input type="email" class="form-control" placeholder="Enter your email address *" id="email" required data-validation-required-message="Please enter your email address.">
-                             <p class="help-block text-danger"></p>
-                         </div>
-
-                         <div class="clearfix"></div>
-                         <div id="success"></div>
-                         <button type="submit" class="btn btn-xl">Subscribe</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -705,79 +695,11 @@ use or talk about your idea to anyone without your explicit permission.</p>
                   <!-- Modal Body -->
                   <div class="modal-body">
                      <?php print render($page['lets_getstarted']); ?>
-                     <form name="sentMessage" id="contactForm">
-                    <div class="modal-body" style="padding: 5px;">
-                       <div class="row">
-                           <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                              <p>Call Us at <a href="tel:6173956842">617.395.6842</a> or email us at <a href="mailto:info@studgate.com" rel="external">info@studgate.com</a> or <a href="mailto:ralph@studgate.com" rel="external">ralph@studgate.com</a> for faster response...</p>
-                           </div>
-                        </div>
-                          <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                    <label>First Name:</label>
-                                    <input class="form-control" name="firstname" placeholder="First Name" type="text" required autofocus />
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                  <label>Last Name:</label>
-                                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                                </div>
-                           </div>
-
-                           <div class="row">
-                              <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                  <label>Email:</label>
-                                    <input class="form-control" name="email" placeholder=" ex: you@emailaddress.com" type="email" required />
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                    <label>Phone:</label>
-                                    <input id="phone#" name="phone#" placeholder=" ex: (xxx) xxx-xxxx" class="form-control input-md" required="" type="text">
-                                </div>
-                           </div>
-
-
-                           <div class="row">
-                                 <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                     <label>City:</label>
-                                  <input id="city" name="city" placeholder="city of residence / company" class="form-control input-md" required="" type="text">
-                                </div>
-
-                                 <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
-                                     <label>Service:</label>
-                                  <select id="service" name="service" class="form-control">
-                                    <option value="Web Design">Web Design</option>
-                                    <option value="Drupal">Drupal</option>
-                                    <option value="Wordpress">Wordpress</option>
-                                    <option value="Mobile App">Mobile App</option>
-                                    <option value="*Other">*Other</option>
-                                  </select>
-                                </div>
-                           </div>
-
-                           <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
-                                    <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required />
-                                </div>
-                           </div>
-                           <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea style="resize:vertical;" class="form-control" placeholder="Message..." rows="6" name="message" required></textarea>
-                                </div>
-                           </div>
-                     </div>
-                     <div class="panel-footer" style="margin-bottom:-14px;">
-                        <input type="submit" class="btn btn-success" value="Send"/>
-                             <!--<span class="glyphicon glyphicon-ok"></span>-->
-                        <input type="reset" class="btn btn-danger" value="Clear" />
-                             <!--<span class="glyphicon glyphicon-remove"></span>-->
-                        <button style="float: right;" type="button" class="btn btn-primary btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </form>
-
                   </div>
 
                   <!-- Modal Footer -->
                   <div class="modal-footer">
-                      All Fields required!!
+                      All Fields required!!  &nbsp; <button style="float: right;" type="button" class="btn btn-primary btn-close" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                   </div>
               </div>
           </div>

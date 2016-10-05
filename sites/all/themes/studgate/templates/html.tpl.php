@@ -89,3 +89,4 @@
    <?php print $scripts; ?>
 </body>
 </html>
+<?php print $page_bottom; ?>
