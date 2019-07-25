@@ -155,7 +155,7 @@
  *   These settings are available as of MySQL 5.5.14, and are defaults in
  *   MySQL 5.7.7 and up.
  * - The PHP MySQL driver must support the utf8mb4 charset (libmysqlclient
-     5.5.3 and up, as well as mysqlnd 5.0.9 and up).
+ *   5.5.3 and up, as well as mysqlnd 5.0.9 and up).
  * - The MySQL server must support the utf8mb4 charset (5.5.3 and up).
  *
  * You can optionally set prefixes for some or all database table names
@@ -479,6 +479,23 @@ ini_set('session.cookie_lifetime', 2000000);
 # $conf['block_cache_bypass_node_grants'] = TRUE;
 
 /**
+ * Expiration of cache_form entries:
+ *
+ * Drupal's Form API stores details of forms in cache_form and these entries are
+ * kept for at least 6 hours by default. Expired entries are cleared by cron.
+ * Busy sites can encounter problems with the cache_form table becoming very
+ * large. It's possible to mitigate this by setting a shorter expiration for
+ * cached forms. In some cases it may be desirable to set a longer cache
+ * expiration, for example to prolong cache_form entries for Ajax forms in
+ * cached HTML.
+ *
+ * @see form_set_cache()
+ * @see system_cron()
+ * @see ajax_get_form()
+ */
+# $conf['form_cache_expiration'] = 21600;
+
+/**
  * String overrides:
  *
  * To override specific strings on your site with or without enabling the Locale
@@ -625,3 +642,29 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash sign to enable.
  */
 # $conf['theme_debug'] = TRUE;
+
+/**
+ * CSS identifier double underscores allowance:
+ *
+ * To allow CSS identifiers to contain double underscores (.example__selector)
+ * for Drupal's BEM-style naming standards, uncomment the line below.
+ * Note that if you change this value in existing sites, existing page styles
+ * may be broken.
+ *
+ * @see drupal_clean_css_identifier()
+ */
+# $conf['allow_css_double_underscores'] = TRUE;
+
+/**
+ * The default list of directories that will be ignored by Drupal's file API.
+ *
+ * By default ignore node_modules and bower_components folders to avoid issues
+ * with common frontend tools and recursive scanning of directories looking for
+ * extensions.
+ *
+ * @see file_scan_directory()
+ */
+$conf['file_scan_ignore_directories'] = array(
+  'node_modules',
+  'bower_components',
+);
