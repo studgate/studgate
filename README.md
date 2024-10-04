@@ -1,7 +1,7 @@
 [![twitter badge](https://img.shields.io/badge/twitter-@studgate-orange?style=for-the-badge&logo=twitter)](https://twitter.com/studgate)
 
 # Hi I'm Ralph 👋
-Welcome to my Github Profile! Currently I'm the CEO of [Responsab](https://responsab.com) and I'm working at [Primacy](https://theprimacy.com) as Lead developer, Senior Web Engineer. I am currently working on launching [Elevate Main Street](https://www.elevate-mainstreet.com). 
+Welcome to my Github Profile! Currently I'm the CEO of [Responsab](https://responsab.com) and also as Lead developer, Senior Web Engineer. I am currently working on launching [Elevate Main Street](https://www.elevate-mainstreet.com). 
 
 I am a champion of small businesses but also worked for [Nasdaq](http://nasdaq.com), [ABB](https://abb.com), etc. 
 
